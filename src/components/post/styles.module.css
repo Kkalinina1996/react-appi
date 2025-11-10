@@ -1,0 +1,8 @@
+.panel {
+  background: #7D9FFF;          /* Figma fill */
+  border: 1px solid #5ECFFF;     /* Figma border */
+  border-radius: 14px;           /* mīksti stūri kā maketā */
+  box-sizing: border-box;
+  /* opcionala maigā ēna, ja gribas “skaistāk” */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
