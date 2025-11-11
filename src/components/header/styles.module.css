@@ -1,31 +1,21 @@
-/* Figma: header 1920x124, bg #3F5CC0 */
 .header {
-  background-color: #3F5CC0;
+  width: 100%;
   height: 124px;
+  background: #3F5CC0;
   display: flex;
-  align-items: center;     /* vertikāli centrē saturu */
-  justify-content: center; /* notur saturu pa vidu platumā */
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
   width: 100%;
-  max-width: 1920px;
-  height: 124px;
+  max-width: 1200px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-sizing: border-box;
-  padding-left: 130px; /* logo sākums */
-  padding-right: 130px;
 }
 
-/* attālums starp logo un pirmais link */
-.nav {
-  margin-left: 500px; /* 130 + 500 = 630px līdz “Главная” */
-}
-
-
-/* Logo bloks: Figma mērījumi ~131.55x47.38 */
 .logo {
   display: inline-flex;
   align-items: center;
@@ -55,7 +45,7 @@ opacity: 1;
   margin: 0;
   padding: 0;
   list-style: none;
- 
+  margin-left: 500px;
 }
 
 .link {
@@ -69,7 +59,6 @@ opacity: 1;
   position: relative;
   outline: none;
   transition: color 0.2s ease;
-
 }
 
 .link:hover { color: #000000; }

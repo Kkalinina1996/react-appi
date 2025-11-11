@@ -1,0 +1,13 @@
+.main {
+  background: #8ec9ff;
+  min-height: 100vh;
+  padding: 64px 80px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.wrapper {
+  display: flex;
+  gap: 110px; /* расстояние между PostList и PostForm */
+}

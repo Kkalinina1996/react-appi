@@ -1,45 +1,54 @@
-.container {
-  width: 1043px;
-  height: 887px;
-  background: #7d9fff;
-  border: 1px solid #5ecfff;
-  border-radius: 14px;
-  padding: 32px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+/* ārējais panelis */
+.section{
+  width:507px; min-height:887px;
+  background:#7D9FFF;
+  border:1px solid #5ECFFF;
+  border-radius:15px;
+  padding:64px 40px;
+  box-sizing:border-box;
+  display:flex; flex-direction:column; align-items:center;
+}
+.heading{
+  margin:0 0 40px; font-weight:700; font-size:36px; opacity:.8; text-align:center;
 }
 
-.title {
-  font-family: Montserrat, Inter, sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
-  color: rgba(9, 8, 8, 0.8);
-  margin-bottom: 24px;
+/* iekšējā karte */
+.card{
+  width:100%; max-width:370px;
+  background:#5C7DE6;
+  border:1px solid rgba(0,0,0,.2);
+  border-radius:15px;
+  padding:24px;
 }
 
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  flex: 1;
-  overflow-y: auto;
-  padding-right: 4px;
+/* augša: ikona + anotācijas */
+.cardHeader{ display:flex; align-items:flex-start; gap:14px; margin-bottom:18px; }
+.avatar{
+  width:48px; height:48px; border-radius:50%;
+  border:2px solid #090808;
+  display:flex; align-items:center; justify-content:center;
 }
+.avatarImg{ width:26px; height:26px; }
+.lines{ display:flex; flex-direction:column; gap:18px; padding-top:4px; }
+.smallLabel{ font-weight:700; font-size:10px; opacity:.8; }
 
-.more {
-  align-self: center;
-  margin-top: auto;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  padding: 10px 20px;
-  background: #d6e4ff;
-  font-weight: 700;
-  cursor: pointer;
-  transition: filter 0.2s ease;
-}
+/* forma ar underline laukiem */
+.form{ display:flex; flex-direction:column; gap:16px; }
+.label{ font-weight:700; font-size:10px; opacity:.8; }
 
-.more:hover {
-  filter: brightness(1.05);
+.underline{ border:none; border-bottom:1px solid rgba(0,0,0,.25); border-radius:0; background:transparent; padding:8px 4px; }
+.input, .textarea{ font-size:16px; color:#090808; outline:none; }
+.textarea{ height:84px; resize:none; line-height:1.35; }
+.input::placeholder, .textarea::placeholder{ color:rgba(9,8,8,.55); }
+.input:focus.underline, .textarea:focus.underline{ border-bottom-color:#090808; }
+
+/* poga */
+.button{
+  align-self:flex-end;
+  width:142px; height:37px;
+  background:#1E3479; color:#fff;
+  border:0; border-radius:8px;
+  font-weight:700; font-size:16px; cursor:pointer;
+  transition: background .2s ease;
 }
+.button:hover{ background:#162A6B; }
